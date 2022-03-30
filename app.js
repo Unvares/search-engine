@@ -1,2 +1,1 @@
-window.app = {};
-const app = window.app;
+import './assets/javascript/init.js';

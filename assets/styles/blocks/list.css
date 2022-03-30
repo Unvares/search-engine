@@ -1,0 +1,13 @@
+.list {
+  margin-top: 24px;
+}
+
+.list__header {
+  color: var(--gray);
+}
+
+.list__content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
