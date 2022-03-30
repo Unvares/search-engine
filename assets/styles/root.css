@@ -1,0 +1,8 @@
+:root {
+  --gray: #A9A9A9;
+  --green: #00BE60; 
+  --yellow: #FFB845;
+  --white: #FFFFFF;
+  --black-light: rgba(0,0,0,0.5);
+  --black-extra-light: rgba(0,0,0,0.1);
+}

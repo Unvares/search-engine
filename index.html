@@ -4,8 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vanilla Search Engine</title>
+  <link rel="icon" href="assets/images/search-icon.svg" type="image/svg">
+  <link rel="stylesheet" href="app.css">
 </head>
 <body>
+  <div class="content-wrapper">
+    <form class="search-panel" name="search">
+      <input
+        class="search-panel__textfield"
+        type="search"
+        name="search-field"
+        placeholder="Type user's name"
+        autocomplete="off"
+      >
+    </form>
+    <section class="list">
+      <h5 class="list__header">420 results</h1>
+      <div class="list__content">
+      </div>
+    </section>
+  </div>
+  <template>
+    <div class="user-card">
+      <img
+        class="user-card__image"
+        src=""
+        width="300px"
+        alt=""
+      >
+      <section class="user-card__info">
+        <h3 class="user-card__name"></h3>
+        <p class="user-card__id"></p>
+      </section>          
+    </div>
+  </template>
   <script type="module" src="app.js"></script>
 </body>
 </html>

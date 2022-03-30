@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+.content-wrapper {
+  padding: 0 24px 24px;
+  max-width: 1024px;
+}
+
+@media screen and (min-width: 1024px) {
+  .content-wrapper {
+    height: calc(100vh - 48px);
+    margin: 24px auto;
+    border-radius: 6px;
+    -webkit-box-shadow: 1px 1px 65px -1px var(--black-extra-light);
+    -moz-box-shadow: 1px 1px 65px -1px var(--black-extra-light);
+    box-shadow: 1px 1px 65px -1px var(--black-extra-light);
+  }
+}
