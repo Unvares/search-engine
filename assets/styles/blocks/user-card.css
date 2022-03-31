@@ -5,6 +5,10 @@
   margin-bottom: 2%;
   float: left;
   cursor: pointer;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 0px 65px 0px var(--black-extra-light);
+  -moz-box-shadow: 0px 0px 65px 0px var(--black-extra-light);
+  box-shadow: 0px 0px 65px 0px var(--black-extra-light);
 }
 
 .user-card__info {
