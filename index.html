@@ -9,35 +9,49 @@
 </head>
 <body>
   <div class="content-wrapper">
-    <form class="search-panel" name="search">
+    <form class="search-panel js-search-panel" name="search">
       <input
-        class="search-panel__textfield"
+        class="search-panel__textfield js-search-line"
         type="search"
         name="search-field"
         placeholder="Type user's name"
         autocomplete="off"
       >
+      <img
+        class="search-panel__loading-image js-loading dn"
+        width="64"
+        src="assets/images/loading.gif"
+        alt="loading...">
+      <button
+        class="search-panel__submit-button js-submit-button"
+        type="submit"
+      ></button>
     </form>
     <section class="list">
-      <h5 class="list__header"></h1>
-      <div class="list__content">
+      <h5 class="list__header js-results-counter"></h5>
+      <div class="list__content js-list-content">
+      </div>
+      <div
+        class="paginator js-paginator"
+        data-page-number="0"
+        data-previous-page="-1"
+        data-next-page="1"
+      >
+        <button
+          class="paginator__button js-previous-page"
+          type="button"
+        >
+          &lt;
+        </button>
+        <button
+          class="paginator__button js-next-page"
+          type="button"
+        >
+          &gt;
+        </button>
       </div>
     </section>
   </div>
-  <template>
-    <div class="user-card">
-      <img
-        class="user-card__image"
-        src=""
-        width="300px"
-        alt=""
-      >
-      <section class="user-card__info">
-        <h3 class="user-card__name"></h3>
-        <p class="user-card__id"></p>
-      </section>          
-    </div>
-  </template>
   <script type="module" src="app.js"></script>
 </body>
 </html>
