@@ -21,11 +21,14 @@
   align-items: center;
   color: var(--white);
   background: var(--black-light);
+  border-radius: 0 0 6px 6px;
+  cursor: default;
 }
 
 .user-card__image {
   position: absolute;
   width: 100%;
+  border-radius: 6px;
 }
 
 @media screen and (max-width: 768px) {
