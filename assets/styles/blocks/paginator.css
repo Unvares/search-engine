@@ -1,0 +1,28 @@
+.paginator {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.paginator__button {
+  all: unset;
+  width: 64px;
+  height: 64px;
+  margin: 0 24px;
+  border: 2px solid var(--green);
+  border-radius: 64px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.2s ease-out;
+}
+
+.paginator__button:hover {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.paginator__button_disabled {
+  pointer-events: none;
+  border-color: var(--gray);
+}
