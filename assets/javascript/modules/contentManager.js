@@ -1,4 +1,6 @@
-app.modules.contentManager = (function(self = {}) {
+import mockApi from './mockApi.js';
+
+export default (function(self = {}) {
   const _searchPanel = document.querySelector('.js-search-panel');
   const _searchLine =  document.querySelector('.js-search-line');
   const _paginator = document.querySelector('.js-paginator');
@@ -50,7 +52,7 @@ app.modules.contentManager = (function(self = {}) {
     _toggleLoadingMode();
 
     _request = (
-      server.sendRequest(_searchLine.value, _paginatorData.pageNumber)
+      mockApi.sendRequest(_searchLine.value, _paginatorData.pageNumber)
     );
     _request.then(_handleAnswer)
   }
@@ -134,10 +136,8 @@ app.modules.contentManager = (function(self = {}) {
     _nextButton.classList.add('paginator__button_disabled');
   }
   
-  self.load = () => {
-    _listeners();
-    _init();
-  };
+  _listeners();
+  _init();
 
   return self;
-})(app.modules.contentManager);
+})();

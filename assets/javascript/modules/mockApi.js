@@ -1,6 +1,6 @@
-import { users } from './data.js';
+import users from '../data.js';
 
-window.server = (function(self = {}) {
+export default (function(self = {}) {
   let _term;
   let _pageNumber;
 
@@ -33,4 +33,4 @@ window.server = (function(self = {}) {
   };
 
   return self;
-})(window.server);
+})();
