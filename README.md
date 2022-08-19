@@ -1,4 +1,7 @@
 # search-engine
+## Demo
+https://unvares.github.io/search-engine/
+
 ## Description
 I wanted to practice vanilla JavaScript ES6 and recall Promise API, so I decided to code a search engine with a pseudo server. \
 The idea is as follows:
@@ -8,6 +11,3 @@ The idea is as follows:
 
 ## Quick Start
 The project is created on vanilla JS ES6, HTML and CSS. No additional technologies are required to run the project. Clone and have fun.
-
-## Demo
-https://unvares.github.io/search-engine/
